@@ -12,8 +12,8 @@ import (
 
 func ConnectToDatabase(config config.DataBaseConfig) (*gorm.DB, error){
 	dsn := fmt.Sprintf(
-		"host=%s port=%s user=%s password=%s dbname=%s",
-		config.Host, config.Port, config.User, config.Password, config.DBName,
+		"host=%s port=%s user=%s dbname=%s",
+		config.Host, config.Port, config.User,config.DBName,
 	)
 	db, err := gorm.Open(postgres.Open(dsn), &gorm.Config{})
 	if err !=nil{

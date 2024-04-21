@@ -21,7 +21,6 @@ func main(){
 	var config = config.DataBaseConfig{
 		Host : os.Getenv("HOST"),
 		User: os.Getenv("USER"),
-		Password :os.Getenv("PASSWORD"),
 		DBName : os.Getenv("DBNAME"),
 		Port: os.Getenv("PORT"),
 	}
